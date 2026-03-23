@@ -1,0 +1,6 @@
+I made a very simple "Typing Speed" finder program, I even made an icon for it. The program uses the 
+"ctime" header file for measuring time and making accurate calculations.
+
+The program's code is simple, and seems too basic but the program itself does not seem so easy. 
+And so thats why I chose it. Initially I wanted to set the icon to the main exe file but because of a missing
+fiel in my pc I couldn't so thats the reason for the shortcut.
