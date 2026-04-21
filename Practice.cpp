@@ -1,30 +1,35 @@
- #include <iostream>
- #include <fstream>
+#include <iostream>
 using namespace std;
 
-
-
-class Book{
+class Item {
     private:
-    string title = "Title X";
+        string name;
+        int id;
+        static int count;
 
     public:
-string getTitle(){
-        return title;
-}
+        Item(string name, int it) : name(name), id(id) {
+            count++;
+        }
 
-void setTitle(string title){
-    this->title = title;
-}
+    void setName(string name){
+        this->name = name;
+    }
+    string getName(){
+        return name;
+    }
+    static int getCount(){
+        return count;
+    }
+    ~Item(){
+        cout << "Destructor was called for " << name << endl;
+        count--;
+    }
 };
 
-int main(){
+int Item::count = 0;
 
-    Book b1;
-cout << "The Title of the Book is: " << b1.getTitle() << endl;
-b1.setTitle("The Alchemist"); 
-cout << endl << "Now, The Title of the Book is: " << b1.getTitle() << endl;
-
-
- return 0; 
+class Electronics : public Item {
+    private:
+     str
 }
